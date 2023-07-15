@@ -1,0 +1,106 @@
+$font-family: "Open Sans", sans-serif;
+
+:root {
+  --color-focus-outer: #ffd337;
+  --color-focus-inner: var(--color-neutral-10);
+
+  // Elevation / Shadow
+  --shadow-none: none;
+  --shadow-xs: 0px 12px 24px -10px rgba(179, 182, 186, 0.05);
+  --shadow-sm: 0px 24px 32px -15px rgba(168, 175, 182, 0.15);
+  --shadow-md: 0px 32px 48px -20px rgba(100, 112, 122, 0.15);
+  --shadow-lg: 0px 48px 56px -25px rgba(100, 112, 122, 0.15);
+  --shadow-4: 0px 2px 4px rgba(40, 41, 61, 0.04), 0px 8px 16px rgba(96, 97, 112, 0.16);
+
+  // App Settings
+  --body-bg: var(--color-neutral-50);
+  --nav-width: 270px;
+  --collapsed-nav-width: 70px;
+
+  // iOS Safe Areas (Notch Support)
+  --os-safe-area-top: env(safe-area-inset-top);
+  --os-safe-area-right: env(safe-area-inset-right);
+  --os-safe-area-bottom: env(safe-area-inset-bottom);
+  --os-safe-area-left: env(safe-area-inset-left);
+
+  --brand-sm-width: 146px;
+  --brand-sm-height: 45px;
+  --brand-width: 232px;
+  --brand-height: 71px;
+  --brand-lg-width: 325px;
+  --brand-lg-height: 103px;
+  --brand-color: var(--color-white);
+
+  // buttons
+  --btn-height: 48px;
+  --btn-height-m: 63px;
+  --btn-height-l: 85px;
+
+  --btn-font-size: var(--font-size-m);
+  --btn-size-m: var(--font-size-m);
+  --btn-size-l: var(--font-size-l);
+
+  --btn-min-width: 64px;
+  --btn-weight: var(--font-bold);
+  --btn-padding: var(--space-none) var(--space-m);
+  --btn-color: var(--color-black);
+  --btn-bg: transparent;
+  --btn-radius: var(--border-radius-none);
+
+  --btn-border-color: transparent;
+
+  --map-pane-width: 470px;
+}
+
+$sizes: (
+  "auto": auto,
+  "none": 0,
+  // 0
+  "xs": 0.25rem,
+  // 4px
+  "s": 0.5rem,
+  // 8px
+  "base": 1rem,
+  // 16px
+  "m": 1.5rem,
+  // 24px
+  "l": 2rem,
+  // 32px
+  "xl": 2.5rem,
+  // 40px
+  "xxl": 3rem,
+  // 48px
+  "xxxl": 5rem,
+  // 80px
+);
+$directions: (
+  "top": top,
+  "bottom": bottom,
+  "start": inline-start,
+  "end": inline-end,
+  "right": right,
+  "left": left,
+  "y": "",
+  "x": "",
+);
+
+$border-radii: (
+  "none": 0,
+  "tiny": 4px,
+  "soft": 6px,
+  "m": 10px,
+  "rounded": 2em,
+  "circle": 50%,
+);
+
+$border-sizes: (
+  "none": 0,
+  "base": 1px,
+  "m": 2px,
+  "l": 3px,
+  "xl": 6px,
+);
+
+//== images path
+$img-path: "/assets/images";
+$font-path: "/assets/fonts";

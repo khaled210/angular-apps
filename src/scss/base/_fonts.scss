@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "HRSD";
+  src: url("#{$font-path}/HRSD-Thin.eot");
+  src: url("#{$font-path}/HRSD-Thin.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-path}/HRSD-Thin.woff2") format("woff2"), url("#{$font-path}/HRSD-Thin.woff") format("woff"),
+    url("#{$font-path}/HRSD-Thin.ttf") format("truetype"), url("#{$font-path}/HRSD-Thin.svg#HRSD-Thin") format("svg");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HRSD";
+  src: url("#{$font-path}/HRSD-Light.eot");
+  src: url("#{$font-path}/HRSD-Light.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-path}/HRSD-Light.woff2") format("woff2"), url("#{$font-path}/HRSD-Light.woff") format("woff"),
+    url("#{$font-path}/HRSD-Light.ttf") format("truetype"), url("#{$font-path}/HRSD-Light.svg#HRSD-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HRSD";
+  src: url("#{$font-path}/HRSD-Regular.eot");
+  src: url("#{$font-path}/HRSD-Regular.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-path}/HRSD-Regular.woff2") format("woff2"), url("#{$font-path}/HRSD-Regular.woff") format("woff"),
+    url("#{$font-path}/HRSD-Regular.ttf") format("truetype"),
+    url("#{$font-path}/HRSD-Regular.svg#HRSD-Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HRSD";
+  src: url("#{$font-path}/HRSD-Medium.eot");
+  src: url("#{$font-path}/HRSD-Medium.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-path}/HRSD-Medium.woff2") format("woff2"), url("#{$font-path}/HRSD-Medium.woff") format("woff"),
+    url("#{$font-path}/HRSD-Medium.ttf") format("truetype"),
+    url("#{$font-path}/HRSD-Medium.svg#HRSD-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HRSD";
+  src: url("#{$font-path}/HRSD-Bold.eot");
+  src: url("#{$font-path}/HRSD-Bold.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-path}/HRSD-Bold.woff2") format("woff2"), url("#{$font-path}/HRSD-Bold.woff") format("woff"),
+    url("#{$font-path}/HRSD-Bold.ttf") format("truetype"), url("#{$font-path}/HRSD-Bold.svg#HRSD-Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HRSD";
+  src: url("#{$font-path}/HRSD-Title.eot");
+  src: url("#{$font-path}/HRSD-Title.eot?#iefix") format("embedded-opentype"),
+    url("#{$font-path}/HRSD-Title.woff2") format("woff2"), url("#{$font-path}/HRSD-Title.woff") format("woff"),
+    url("#{$font-path}/HRSD-Title.ttf") format("truetype"), url("#{$font-path}/HRSD-Title.svg#HRSD-Title") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

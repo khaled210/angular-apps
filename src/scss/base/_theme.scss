@@ -1,0 +1,138 @@
+:root {
+  --font-family: "HRSD", sans-serif;
+  --material-font: "Material Icons";
+
+  // app
+  --header-bg: #292a35;
+  --footer-bg: #fff;
+  --nav-bg: #fff;
+
+  --header-height: auto;
+  --side-nav-width: 64px;
+  --side-nav-transition: cubic-bezier(0.25, 0.8, 0.25, 1);
+  --side-nav-duration: 0.2s;
+}
+
+[dir="rtl"] {
+  --font-family: "HRSD", sans-serif;
+}
+
+::selection {
+  color: var(--color-black);
+  background: var(--color-secondary-300);
+}
+
+$colors: (
+  "black": #000,
+  "white": #fff,
+  "primary": #fa961e,
+  "secondary": #134359,
+  "accent": #158285,
+  "orange": #fa961e,
+  "yellow": #fcb614,
+  "green": #2bb574,
+  "eden": #158285,
+  "cyprus": #134359,
+
+  "primary-50": #fef9f3,
+  "primary-100": #fef2d1,
+  "primary-200": #fee2a4,
+  "primary-300": #fdcc77,
+  "primary-400": #fbb855,
+  "primary-500": #fa961e,
+  "primary-600": #d77615,
+  "primary-700": #b3590f,
+  "primary-800": #904009,
+  "primary-900": #772f05,
+
+  "secondary-50": #f3f5f6,
+  "secondary-100": #cff4f6,
+  "secondary-200": #a3e5ee,
+  "secondary-300": #6cbbcd,
+  "secondary-400": #3f849b,
+  "secondary-500": #134359,
+  "secondary-600": #0d344c,
+  "secondary-700": #092740,
+  "secondary-800": #061c33,
+  "secondary-900": #03142a,
+
+  "accent-50": #f3f8f9,
+  "accent-100": #cef8eb,
+  "accent-200": #a1f2e0,
+  "accent-300": #6cdaca,
+  "accent-400": #42b5af,
+  "accent-500": #158285,
+  "accent-600": #0f6772,
+  "accent-700": #0a4e5f,
+  "accent-800": #06394d,
+  "accent-900": #04293f,
+
+  "gray": #f5f7f7,
+
+  "gray-100": #f5f5f5,
+  "gray-200": #dedede,
+  "gray-300": #939393,
+  "gray-500": #5b5b5b,
+  "gray-600": #5d5a70,
+
+  "dark-100": #c7d1d9,
+  "dark-200": #808080,
+  "dark-300": #696969,
+  "dark-400": #434343,
+  "dark-500": #272a35,
+  "dark-600": #313678,
+
+  "light-100": white,
+  "light-200": #fafafc,
+  "light-300": #f9f9f9,
+  "light-400": #ebebf0,
+  "light-500": #e3e4eb,
+  "light-600": #ebebeb,
+
+  "neutral-50": #f9fafa,
+  "neutral-100": #f3f4f5,
+  "neutral-200": #e7eaeb,
+  "neutral-300": #d6dadb,
+  "neutral-400": #b8c5ca,
+  "neutral-500": #94a5ab,
+  "neutral-600": #808c91,
+  "neutral-700": #576b74,
+  "neutral-800": #36474f,
+  "neutral-900": #0c212c,
+
+  "success-50": #f4fbf8,
+  "success-100": #d4fbd9,
+  "success-200": #7ee8a1,
+  "success-300": #7ee8a1,
+  "success-400": #5ad28d,
+  "success-500": #2bb574,
+  "success-600": #1f9b6d,
+  "success-700": #158264,
+  "success-800": #0d6859,
+  "success-900": #085651,
+
+  "danger": #db464b,
+  "danger-50": #fff3f2,
+  "danger-100": #ffebdf,
+  "danger-200": #ffd2bf,
+  "danger-300": #ffb49f,
+  "danger-400": #ff9787,
+  "danger-500": #ff6860,
+  "danger-600": #db464b,
+  "danger-700": #b73040,
+  "danger-800": #931e36,
+  "danger-900": #7a1230,
+
+  "warn-50": #fffbf3,
+  "warn-100": #fef6cf,
+  "warn-200": #feeba0,
+  "warn-300": #fedc71,
+  "warn-400": #fdcd4e,
+  "warn-500": #fcb614,
+  "warn-600": #d8950e,
+  "warn-700": #b5770a,
+  "warn-800": #925a06,
+  "warn-900": #784703,
+);
+
+@include colors-variation($colors);

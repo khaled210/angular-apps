@@ -1,0 +1,120 @@
+$font-weights: (
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+  "black": 900,
+);
+
+:root {
+  // Typography - Size
+  --font-size-display1: 4rem; // 64px
+  --font-size-display2: 3.5rem; // 56px
+  --font-size-display3: 3rem; // 48px
+  --font-size-h1: 2.5rem; // 40px
+  --font-size-h2: 2rem; // 32px
+  --font-size-h3: 1.75rem; // 28px
+  --font-size-h4: 1.5rem; // 24px
+  --font-size-h5: 1.25rem; // 20px
+  --font-size-h6: 1rem; // 16px
+
+  --font-size-xl: 1.75rem; // 28px
+  --font-size-l: 1.375rem; // 22px
+  --font-size-m: 1.125rem; // 18px
+  --font-size-base: 1rem; // 16px
+  --font-size-s: 0.85rem; // 14px
+  --font-size-xs: 0.75rem; // 12px
+  --font-size-tiny: 0.625rem; // 10px
+
+  @each $weight, $value in $font-weights {
+    --font-#{$weight}: #{$value};
+  }
+}
+
+@each $weight, $value in $font-weights {
+  .font-#{$weight} {
+    font-weight: var(--font-#{$weight}) !important;
+  }
+}
+
+@mixin typo($name, $size, $weight: var(--font-regular), $line-height: normal, $transform: capitalize) {
+  #{$name} {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height;
+    text-transform: $transform;
+    margin-top: 0;
+  }
+}
+
+@include typo(".typo-display-1", var(--font-size-display1), var(--font-black), 105px);
+@include typo(".typo-display-2", var(--font-size-display2), var(--font-black), 105px);
+@include typo(".typo-display-3", var(--font-size-display2), var(--font-black), 100px);
+
+@include typo(".h1", var(--font-size-h1), var(--font-black), 59px);
+@include typo(".h2", var(--font-size-h2), var(--font-bold), 48px);
+@include typo(".h3", var(--font-size-h3), var(--font-black), 50px);
+@include typo(".h4", var(--font-size-h4), var(--font-bold), 42px);
+@include typo(".h5", var(--font-size-h5), var(--font-black), 55px);
+@include typo(".h6", var(--font-size-h6), var(--font-bold), 24px);
+
+@include typo(".font-size-xl", var(--font-size-xl), var(--font-regular), 59px);
+@include typo(".font-size-l", var(--font-size-l), var(--font-regular), 40px);
+@include typo(".font-size-base", var(--font-size-base), var(--font-regular), 24px);
+@include typo(".font-size-m", var(--font-size-m), var(--font-regular), 24px);
+@include typo(".font-size-s", var(--font-size-s), var(--font-light), 33px);
+
+.text-lowercase {
+  text-transform: lowercase !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.text-capitalize {
+  text-transform: capitalize !important;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+}
+
+.text-no-underline {
+  text-decoration: none !important;
+}
+
+.text-line-through {
+  text-decoration: line-through !important;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-start {
+  text-align: start !important;
+}
+
+.text-end {
+  text-align: end !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}

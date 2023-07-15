@@ -1,0 +1,9 @@
+.home-section {
+  &--xl {
+    padding: var(--space-xxxl) var(--space-none);
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: var(--space-xl) var(--space-none);
+  }
+}

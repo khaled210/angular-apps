@@ -1,0 +1,19 @@
+:root {
+  @each $border, $value in $border-sizes {
+    --border-size-#{$border}: #{$value};
+  }
+  @each $border, $value in $border-radii {
+    --border-radius-#{$border}: #{$value};
+  }
+}
+
+@each $size, $value in $border-sizes {
+  .border-size-#{$size} {
+    border: var(--border-size-#{$size}) solid currentColor !important;
+  }
+}
+@each $size, $value in $border-radii {
+  .border-radius-#{$size} {
+    border-radius: var(--border-radius-#{$size}) !important;
+  }
+}
